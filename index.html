@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta viewport="width=device-width initial-scale=1.0">
+    <title>index</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+           flex-direction: column; 
+        }
+        .stadium_section{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px;
+        }
+        img{
+            border: 15px;
+            border-radius: 40%;
+            width: 200px;
+            height: 300px;
+        }
+        li{
+            font-size: 20px;
+        }
+        .video-container{
+            width: 60%;
+            max-width: 800px;
+            text-align: center;
+            margin: auto;
+        }
+        video{
+            width: 100%;
+            height: auto;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border: 2px solid rgba(0, 0, 0, 0.1547);
+            background: #c9abab;
+            border-radius: 20px;
+            margin: 10px;
+            max-width: 70%;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        label{
+            font-weight: 550;
+            position: relative;
+            right: 120px;
+            text-align: left;
+            top: 18x;
+            
+        }
+        input{
+            font-size: 20px;
+            padding: 5px 10px;
+            margin-left: 15px;
+            right: 0;
+            position: relative;
+            top: -25px;
+            left: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.534);
+            border-radius: 10px;
+            outline: none;
+        }
+        select{
+            position: relative;
+            top: -16px;
+            
+        }
+        label[for="male"]{
+            position: relative;
+            top: -33px;
+            left: -50px;
+        }
+        label[for="female"]{
+            position: relative;
+            top: -67px;
+            left: 20px;
+        }
+        #DoB{
+            position: relative;
+            left: 10px;
+        }
+        #male{
+            position: relative;
+            left: -23px;
+            top: -17px;
+        }
+        #female{
+            position: relative;
+            top: -51px;
+            left: 55px;
+        }
+        button{
+            padding: 10px 15px;
+            background: #99c8e7;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            top: -40px;
+            margin-top: 25px;
+        }
+        button:hover{
+            filter: blur(0.5);
+        }
+        #register{
+            position: relative;
+            left: -70px;
+        }
+        #clear{
+            position: relative;
+            right: -10px;
+            top: -105px;
+            margin-bottom: 0;
+        }
+        #interests{
+            position: relative;
+            margin-top: -50px;
+        }
+        label[for="coding"]{
+            position: relative;
+            top: -35px;
+            left: -50px;
+        }
+        label[for='sports']{
+            position: relative;
+            top: -35px;
+            left: -50px;
+        }
+        label[for="music"]{
+            position: relative;
+            top: -35px;
+            left: -50px;
+        }
+        #coding{
+            position: relative;
+            top: -17px;
+            left: 0;
+        }
+        #sports{
+             position: relative;
+            top: -17px;
+            left: 0;
+        }
+        #music{
+             position: relative;
+            top: -17px;
+            left: 0;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="stadium_section">
+    
+    <ol type="i">
+        <h5>Top 5 stadiums in Kenya</h5>
+        <li>Kasarani</li>
+        <li>Nyayo</li>
+        <li>Talanta</li>
+        <li>City Stadium</li>
+        <li>Ulinzi complex</li>
+    </ol>
+
+    <img src="https://images.pexels.com/photos/13863262/pexels-photo-13863262.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Beautiful stadium">
+    </div>
+    <table border="2px">
+        <thead>
+            <tr><th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Emails</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Tonny</td>
+                <td>214 Nrb street, Juja</td>
+                <td>+254 785 695269</td>
+                <td>tonny@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Solidad</td>
+                <td>415 Northlands, Ruiru</td>
+                <td>+254 701 989570</td>
+                <td>solin@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Timothy Key</td>
+                <td>254 Dolphine Est, Juja</td>
+                <td>+254 725 968574</td>
+                <td>keytim@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Rasmus Hojlund</td>
+                <td>009 13th Street, Manchester</td>
+                <td>+44 705 968541</td>
+                <td>rasmus@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Antoine Griez</td>
+                <td>004 Laliga, Madrid</td>
+                <td>+254 705 968324</td>
+                <td>toine@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="form-container">
+        <form action="">
+        
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" placeholder="Full name" required>
+        
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+        
+            <label for="password">Password: </label>
+            <input type="password" id="password" minlength=8 maxlength=20 required>
+        
+            <label for="DoB">DoB: </label>
+            <input type="date" id="DoB" required>
+        
+            <label for="continents">Continents: </label>
+            <select name="" id="continents">
+                <option value="">Africa</option>
+                <option value="">North America</option>
+                <option value="">Europe</option>
+                <option value="">South America</option>
+                <option value="">Asia</option>
+                <option value="">Middle East</option>
+            </select>
+        
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+            <label id="interests">Interests:</label>
+                <input type="checkbox" id="coding" name="interests" value="Coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="sports" name="interests" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="Music">
+                <label for="music">Music</label>
+        
+            <button type="submit" id="register">Register</button>
+            <button type="clear" id="clear">Clear</button>
+        </form>
+    </div>
+    
+    <div class="video-container">
+        <h4>A good song with lyrics for my sister</h4>
+        <video controls>
+            <source src="/feb-2025-advanced-html-Tonwilly/hey_girl Anne Wilson.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+
+</body>
+</html>
